@@ -7,15 +7,15 @@ terraform {
   }
  # Adding Backend as S3 for Remote State Storage
   backend "s3" {
-    bucket = "26mar2025jenterraform"
-    key    = "bas/terraform.tfstate"
-    region = "us-east-1"   
+    bucket = "my-bucket-24-03-25"
+    key    = "sharath/terraform.tfstate"
+    region = "ap-south-1"   
   }
 }
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 
